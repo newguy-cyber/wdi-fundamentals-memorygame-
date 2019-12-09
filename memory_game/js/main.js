@@ -1,24 +1,41 @@
 console.log("Up and runnning!");
-/*
-console.log("User flipped" + cardOne);
-console.log("User flipped" + cardThree);
-*/
-var cards = ["queen", "queen", "king", "king"];
+var cards = [
+{
+	rank : "queen",
+	suit : "hearts",
+	cardImage: "imgaes/queen-of-hearts.png",
+
+},
+{
+	rank : "queen",
+	suit : "diamonds",
+	cardImage : "images/queen-of-diamonds.png"
+
+},
+{
+	rank : "king",
+	suit : "hearts",
+	cardImage : "images/king-of-hearts.png",
+},
+{
+	rank : "king",
+	suit : "diamonds",
+	cardImage : "images/king-of-diamomds.png"
+}
+];
 
 var cardsInPlay = [];
 
-var cardOne = cards[0];
-cardsInPlay.push(cardOne);
-console.log("User flipped " + cardOne);
-
-var cardTwo = cards[2]
-cardsInPlay.push(cardTwo);
-console.log("User flipped " + cardTwo)
-
-if (cardsInPlay.length === 2)/* Note sure what the lesson is asking for */
+function flipCard() {
+	console.log("User flipped") + cards[cardId].rank;
+	cardsInPlay.push(cards[cardId].rank);
+}
+console.log(cards[cardId].suit)
+/*
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 alert("You Found A Match");
 }
 else {
 alert("Sorry, Try Again");
 }
+*/
